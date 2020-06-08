@@ -1,0 +1,17 @@
+/* 底部 样式 */
+
+footer .container {
+    text-align: center;
+    color: #b5b5b5;
+    font-size: .8rem;
+}
+
+.footer-main {
+    padding-left: 252px;
+}
+
+@media (max-width: 992px) {
+    .footer-main {
+        padding-left: 0;
+    }
+}

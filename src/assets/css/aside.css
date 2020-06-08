@@ -1,0 +1,111 @@
+/* 侧栏 样式 */
+
+aside {
+    background: var(--content-bg-color);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 -1px 0.5px 0 rgba(0, 0, 0, 0.09);
+    color: var(--text-color);
+    margin-top: 12px;
+}
+
+aside.aside-fixed {
+    position: fixed;
+    top: 0;
+    width: 240px;
+}
+
+.aside-tab {
+    padding: 18px 10px;
+}
+
+.aside-tab .aside-tab-toggle {
+    text-align: center;
+}
+
+.aside-tab .aside-tab-toggle .tab-toggle {
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 0.875em;
+    border-bottom: 1px solid transparent;
+}
+
+.aside-tab .aside-tab-toggle .active {
+    border-bottom-color: #fc6423;
+    color: #fc6423;
+}
+
+.aside-tab .aside-tab-main {
+    margin-top: 15px;
+}
+
+.aside-tab .tab-catalog li {
+    padding: 5px 10px;
+    font-size: .8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aside-tab .tab-catalog a {
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.aside-tab .tab-catalog li>a:hover,
+.tab-catalog li>a.active {
+    border-bottom-color: #fc6423;
+    color: #fc6423;
+}
+
+.tab-author {
+    text-align: center;
+}
+
+.tab-author .author-name {
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.tab-author .author-desc {
+    color: #999;
+    font-size: 0.8125em;
+}
+
+.tab-author .author-other>div {
+    width: fit-content;
+}
+
+.tab-author .author-other>div>i {
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.tab-author .author-other>div>i:hover {
+    color: #000;
+    background-color: #dadada;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(134, 134, 134, 0.12);
+    /* padding: 4px; */
+}
+
+.backtop {
+    background: #eeeeee;
+    font-size: .7rem;
+    text-align: center;
+    opacity: 0.6;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.backtop i {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.backtop:hover {
+    opacity: 0.8;
+}

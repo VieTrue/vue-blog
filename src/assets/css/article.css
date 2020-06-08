@@ -1,0 +1,302 @@
+/* 文章列表 样式 */
+
+.right-mian .el-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin-top: 0;
+}
+
+.right-mian div+.el-card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 -1px 0.5px 0 rgba(0, 0, 0, 0.09);
+    margin-top: 12px;
+}
+
+.right-mian .el-card .el-card__header {
+    text-align: center;
+    padding: 40px 40px 20px;
+}
+
+.right-mian .el-card .el-card__body {
+    padding: 30px 40px 26px;
+}
+
+.right-mian .el-card .title {
+    font-size: 1.69em;
+    font-weight: normal;
+    margin: initial;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.right-mian .el-card .title a {
+    border-bottom: none;
+    color: var(--link-color);
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.right-mian .box-card .title a:hover::before {
+    transform: scaleX(1);
+    visibility: visible;
+}
+
+.right-mian .box-card .title a::before {
+    background: var(--link-color);
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    visibility: hidden;
+    width: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.right-mian .el-card .info,
+.right-mian .el-card .desc {
+    color: #999;
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 0.75em;
+}
+
+.right-mian .el-card .info div.el-col {
+    width: fit-content;
+}
+
+.right-mian .el-card .info i {
+    padding-right: 5px;
+}
+
+.right-mian .el-card__body .el-image {
+    width: 100%;
+}
+
+.right-mian .el-card__body .el-image .image-slot {
+    text-align: center;
+    padding: 30%;
+    background-color: #eee;
+}
+
+.right-mian .el-card__body .el-image .image-slot i {
+    font-size: 2rem;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags .el-tag {
+    margin: 0 4px;
+    line-height: 22px;
+    height: auto;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.tags .el-tag:hover {
+    opacity: 1;
+}
+
+.tags .el-tag a {
+    color: inherit;
+    border: none;
+}
+
+.show .el-card .el-card__body {
+    padding: 0;
+}
+
+.show .pages>div {
+    width: auto;
+}
+
+.markdown-body {
+    font-size: 14px !important;
+}
+
+
+/* .v-show-content,
+.v-show-content-html {
+    padding: 20px;
+} */
+
+.markdown-body blockquote {
+    color: #666;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.markdown-body code {
+    margin: 0 5px !important;
+    font-family: "Meiryo UI", "YaHei Consolas Hybrid", Consolas, "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace !important;
+    padding: 3px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.markdown-body table thead tr {
+    background-color: #F8F8F8 !important;
+}
+
+.markdown-body table tr:nth-child(2n) {
+    background-color: #f8f8f8 !important;
+}
+
+.markdown-body pre {
+    padding: 10px;
+    border: 1px solid #ddd;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.markdown-body pre ol {
+    list-style: decimal;
+    margin-bottom: 0;
+}
+
+.markdown-body pre ol li {
+    border-bottom: solid 1px #efefef;
+}
+
+.sub-menu {
+    background: var(--content-bg-color);
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 6px 0;
+    text-align: center;
+    border-bottom: initial;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.sub-menu+main .el-card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 -1px 0.5px 0 rgba(0, 0, 0, 0.09);
+    margin-top: 12px;
+}
+
+.sub-menu .el-col-24 {
+    width: auto !important;
+}
+
+.sub-menu a {
+    margin: 5px 20px;
+    font-size: 0.8125em;
+    display: block;
+}
+
+.sub-menu a:hover,
+.sub-menu a.active {
+    color: #fc6423;
+}
+
+.desc .el-image img {
+    max-height: 250px;
+}
+
+main.show .tags {
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.fixed-right {
+    position: fixed;
+    top: 100px;
+    border: 1px solid #eaeaea;
+    left: calc(75% + 12.5% + 12px);
+    background-color: #fff;
+    text-align: center;
+}
+
+.fixed-right>div {
+    cursor: pointer;
+    width: 45px;
+}
+
+.fixed-right>div+div {
+    border-top: 1px solid #eaeaea;
+}
+
+.fixed-right>div:hover {
+    background-color: #f9f9f9;
+}
+
+.fixed-right>div>i {
+    display: block;
+    padding-top: 10px;
+}
+
+.fixed-right>div>p {
+    font-size: .7rem;
+    margin-bottom: 0px;
+}
+
+main .original {
+    padding: 20px;
+    font-size: .7rem;
+}
+
+main.show .original a {
+    color: #1787d6;
+    font-size: 1rem;
+}
+
+@media (max-width: 1450px) {
+    .fixed-right {
+        left: calc(90% + 5% + 12px);
+    }
+}
+
+@media (max-width: 768px) {
+    .right-mian .el-card .el-card__header {
+        padding: 10px 20px 10px;
+    }
+    .right-mian .el-card .el-card__header+.el-card__body {
+        padding: 5px 10px 5px;
+    }
+    .right-mian .el-card .el-card__body {
+        padding: 10px 21px 10px;
+    }
+    .right-mian .el-card .title a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    .right-mian .el-card .title {
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    main .el-row--flex.is-justify-center {
+        justify-content: left
+    }
+    .tags {
+        margin: 10px;
+    }
+    .v-note-wrapper {
+        padding: 10px !important;
+    }
+    .markdown-body blockquote,
+    .markdown-body dl,
+    .markdown-body ol,
+    .markdown-body p,
+    .markdown-body pre,
+    .markdown-body table,
+    .markdown-body ul {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 465px) {
+    .sub-menu a {
+        margin: 5px 5px;
+    }
+}
