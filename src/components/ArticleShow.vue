@@ -10,7 +10,7 @@
                     <el-col title="修改时间"> <i class="el-icon-time"></i> <span> {{ArticleInfo.updated_at}} </span> </el-col>
                     <el-col title="浏览数"> <i class="el-icon-view"></i> <span> {{ArticleInfo.views}} </span> </el-col>
                     <el-col title="点赞数"> <i class="el-icon-star-off"></i> <span> {{ArticleInfo.likes}} </span> </el-col>
-                    <el-col title="评论数"> <i class="el-icon-chat-line-square"></i> <span> {{ArticleInfo.comment}} </span> </el-col>
+                    <el-col title="评论数"> <i class="el-icon-chat-line-square"></i> <span> {{ArticleInfo.comments_count}} </span> </el-col>
                 </el-row>
             </div>
             <view-editor v-model="ArticleInfo.content"/>

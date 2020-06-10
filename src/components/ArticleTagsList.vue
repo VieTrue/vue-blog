@@ -12,7 +12,7 @@
                     <el-col title="修改时间"> <i class="el-icon-time"></i> <span> {{item.updated_at}} </span> </el-col>
                     <el-col title="浏览数"> <i class="el-icon-view"></i> <span> {{item.views}} </span> </el-col>
                     <el-col title="点赞数"> <i class="el-icon-star-off"></i> <span> {{item.likes}} </span> </el-col>
-                    <el-col title="评论数"> <i class="el-icon-chat-line-square"></i> <span> {{item.comment}} </span> </el-col>
+                    <el-col title="评论数"> <i class="el-icon-chat-line-square"></i> <span> {{item.comments_count}} </span> </el-col>
                 </el-row>
             </div>
             <el-row class="desc" :gutter="15" v-if="item.image">
@@ -33,7 +33,7 @@
                     <el-col title="修改时间"> <i class="el-icon-time"></i> <span> {{item.updated_at}} </span> </el-col>
                     <el-col title="浏览数"> <i class="el-icon-view"></i> <span> {{item.views}} </span> </el-col>
                     <el-col title="点赞数"> <i class="el-icon-star-off"></i> <span> {{item.likes}} </span> </el-col>
-                    <el-col title="评论数"> <i class="el-icon-chat-line-square"></i> <span> {{item.comment}} </span> </el-col>
+                    <el-col title="评论数"> <i class="el-icon-chat-line-square"></i> <span> {{item.comments_count}} </span> </el-col>
                 </el-row>
             </div>
             <div class="desc" v-else>
