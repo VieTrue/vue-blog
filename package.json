@@ -10,7 +10,7 @@
         "start": "npm run dev"
     },
     "dependencies": {
-        "axios": "^0.18.1",
+        "axios": "^0.21.1",
         "element-ui": "^2.13.2",
         "jquery": "^3.5.1",
         "mavon-editor": "^2.9.0",
